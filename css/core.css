@@ -1,0 +1,127 @@
+/****=== Variable Declarations For Media Querys ===****/
+/****=== Media Query ===****/
+	/*
+	  EXAMPLE:
+
+	  @include media-query-height(min, 640px){}
+	*/
+/****=== Placeholders ===****/
+	/*
+		EXAMPLE:
+
+		@include placeholder {
+			color: #ffffff
+			text-decoration: underline;
+		}
+	*/
+/****=== Font Size px to rem ===****/
+/*
+	EXAMPLE:
+	
+	@include font-size(14px)
+*/
+/****=== Clearfix ===****/
+	/*
+		EXAMPLE:
+
+		@extend cf;
+	*/
+/****=== Colour Themes ===****/
+	/*
+		EXAMPLE:
+
+		@include theme(example-theme, orange);
+	*/
+/****=== Center Align ANYTHING!!! ===****/
+	/*
+		EXAMPLE:
+
+		@include center(both);
+	*/
+body {
+  background: #0e0e0e;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+
+p {
+  margin: 0;
+  font-size: 22px;
+  color: #9e9e9e;
+}
+@media screen and (max-width: 449px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.accordion-section {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  display: block;
+}
+.accordion-section .accordion-wrapper {
+  padding: 20px;
+  background: white;
+}
+.accordion-section .accordion-wrapper .content-wrap {
+  margin-bottom: 4px;
+}
+.accordion-section .accordion-wrapper .content-wraplast-child {
+  margin-bottom: 0;
+}
+.accordion-section .accordion-wrapper .btn {
+  background: #9e38b0;
+  color: white;
+  cursor: pointer;
+  padding: 32px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 32px;
+  font-style: italic;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  border-bottom: 4px solid #6f277d;
+}
+@media screen and (max-width: 449px) {
+  .accordion-section .accordion-wrapper .btn {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+.accordion-section .accordion-wrapper i {
+  float: right;
+  font-weight: 300;
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s;
+}
+.accordion-section .accordion-wrapper .active {
+  background: #6844b7;
+  border-bottom: 4px solid #4c3185;
+}
+.accordion-section .accordion-wrapper .active i {
+  -ms-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s;
+}
+.accordion-section .accordion-wrapper .content {
+  display: none;
+  background: white;
+  padding: 20px;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+
+/*# sourceMappingURL=core.css.map */
