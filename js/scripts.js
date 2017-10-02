@@ -1,4 +1,5 @@
-        //-- Json -- //
+
+    //-- Json -- //
 
     var json = { "blocks": [
         {
@@ -14,6 +15,7 @@
             "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         }
     ]};
+
 
     let accordion = document.getElementsByClassName("accordion-wrapper")[0];
     let data = json.blocks;
@@ -43,3 +45,4 @@
 
       }
     })
+
